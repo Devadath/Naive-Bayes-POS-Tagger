@@ -134,7 +134,7 @@ if (__name__ == "__main__"):
         k = ReverseNode.root[l[0]].prob_class(l,{},0)
         normalised_suffix = normaliser(k,{})
  
-    print (normalised_prefix,normalised_suffix)
+   # print (normalised_prefix,normalised_suffix)
     probability = lambda k,l : {(key,k.get(key,1)*l.get(key,1)) for key in set(list(k.keys())+list(l.keys()))}
     final_prob = probability(normalised_prefix,normalised_suffix)
  
